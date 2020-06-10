@@ -1,0 +1,60 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+	margin:0;
+}
+
+header{
+	text-align: center;
+	color: #232323;
+}
+
+.wrap {
+	max-width: 100%;
+	margin:25px auto;
+}
+
+/* Maksimum ukuran kolom, kapan kolom pindah jadi baris di halaman */
+@media (max-width: 800px) {
+	.flex-container {
+		/* float:left; */
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+    }
+  }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-item {
+    flex-basis: 100%;
+	width: 40%;
+	height: 100%;
+    /* padding:25px; */
+	margin:4px;
+}
+
+img{
+    box-sizing: border-box;
+    width: 300px;
+    height: 500px;
+    
+    margin-left: 75px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+h1 {
+    font-family: fantasy;
+}
+
+p {
+    font-family: fantasy;
+    font-variant: normal;
+    padding-right: 20px;
+    margin-right: 30px;
+  }
+  
